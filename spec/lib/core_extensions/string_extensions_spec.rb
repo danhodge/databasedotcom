@@ -9,4 +9,12 @@ describe "string extensions" do
       "User".resourcerize.should == "user"
     end
   end
+
+  describe "#constantize" do
+    context "when sting is empty" do
+      it "returns Object" do
+        "".constantize.should eq(Object)
+      end
+    end
+  end
 end
