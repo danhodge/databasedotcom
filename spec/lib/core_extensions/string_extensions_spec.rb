@@ -11,7 +11,7 @@ describe "string extensions" do
   end
 
   describe "#constantize" do
-    context "when sting is empty" do
+    context "when string is empty" do
       it "returns Object" do
         "".constantize.should eq(Object)
       end
