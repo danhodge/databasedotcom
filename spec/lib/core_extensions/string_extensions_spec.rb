@@ -16,5 +16,11 @@ describe "string extensions" do
         "".constantize.should eq(Object)
       end
     end
+
+    context "when string ends with ::" do
+      it "returns Object" do
+        "Object::".constantize.should eq(Object)
+      end
+    end
   end
 end
